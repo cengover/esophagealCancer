@@ -1,0 +1,9 @@
+Simulation folder has the latest version of the simulation model. 
+
+To compile the simulation model:
+	- ADEVS should be installed and compiled. 
+	- Makefile should point to PATHS of ADEVS, GSL libraries for random number generation
+
+Calibration folder includes all scripts that parses simulation outputs, samples biopsies, optimization routines, and plotting scripts.
+
+

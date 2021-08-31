@@ -1,0 +1,20 @@
+This folder includes all the python code that runs the simulaton model and parses the simulation output.
+
+- biopsies.py includes the implementations of different biopsy protocol functions. The paper used "seattlePerturbation" method from biopsies.py.
+- calibrationRoutine.py is used by optimization.py, which is the implementation of the particle swarm optimization. CalibrationRoutine.py is used to run the simulation commands, parse them with read function, and run pathology function (biopsy sampling) on the code. The results are the calibrated scenario and statistics on the population of solutions.  
+- randomProtocol.py and randomRoutine.py are used to optimize (particle swarm) random biopsy parameters on a calibrated scenario. It varies jumbo sample sizes (x and y) and the number of samples.
+- sliceProtocol.py and sliceRoutine.py are used to optimize random protocol with slicing. It varies sample sizes and how many quadrants we will sample from. 
+- settings.py has all the parameters (global, optimization related, or simulation related) to be shared in different pieces of code. 
+- curves.py and singleCurve.py are used to generate HGD detection and missed malignancy curves from a given scenarios and using plot.py we plot the results.
+- .pbs files are all used to submit jobs in the computing clusters of ORNL. 
+- plotDensity.py plots the density plots.
+- maxZ.py calculates max depth of the tissues on z axis.
+- timeIntervals.py calculates the time between occurrences of BE, dysplasia, and cancer. 
+- run.py just runs the simulation model
+
+The packages that are used in these implementations are: 
+- Pandas
+- Numpy
+- DEAP
+- Scoop
+- I recommend installing Anaconda and using Python 3.6. If you would like to run with Python 2.7, you might need a couple of revisions. Using pip install with Anaconda installed Python version, the environment should be set. 

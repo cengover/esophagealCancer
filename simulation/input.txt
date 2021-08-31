@@ -1,0 +1,5 @@
+diffusion_rate 0.2102969405962814
+be_onset_age 30
+mutate_be 1.2405326589055903e-08
+mutate_dysplasia 4.005991092186453e-08
+stem_cell_density 3300

@@ -1,0 +1,5 @@
+This folder has the Jupyter notebook and the data that prepares the performance metrics. 
+
+errorBars.py creates the error bar of the performance (Average runtimes are hard-coded). 
+
+ReadNplot.R generates 3D visualization of simulation outputs (.csv files)
